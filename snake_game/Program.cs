@@ -63,25 +63,8 @@ namespace Snake
                     gameover = true;
                 }
 
-                //for (int i = 0; i < scr_width; i++)
-                //{
-                //    Console.SetCursorPosition(i, 0);
-                //    Console.Write("■");
-
-                //    Console.SetCursorPosition(i, scr_height - 1);
-                //    Console.Write("■");
-                //}
                 DrawLine(new Pixel(0, 0, ConsoleColor.Magenta), scr_width, false);
                 DrawLine(new Pixel(0, 0, ConsoleColor.Magenta), scr_height - 1, true);
-
-                //for (int i = 0; i < scr_height; i++)
-                //{
-                //    Console.SetCursorPosition(0, i);
-                //    Console.Write("■");
-
-                //    Console.SetCursorPosition(scr_width - 1, i);
-                //    Console.Write("■");
-                //}
 
                 Console.ForegroundColor = ConsoleColor.Green;
                 if (berryx == snake_head.xPos && berryy == snake_head.yPos)
